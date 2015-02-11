@@ -1,0 +1,2568 @@
+<html>
+  <head>
+	<title>Weather App</title>
+  <meta charset="utf8">
+  <link rel="stylesheet" href="css/styles.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, minimal-ui">
+  <meta http-equiv="refresh" content="60">
+  </head>
+  <body>
+    <div id = "citieslist" class="cities-list page show">
+      <ul>
+        <li class="is-currentlocation">
+          <a href="#city/currentlocation">
+            <ul>
+              <li>
+                <div class="time"></div>
+                <div class="city-name">Current Location</div>
+              </li>
+              <li class = "currentTemperature temp-Tag"></li>
+            </ul>
+          </a>
+        </li>
+
+        <li class="is-sanjose">
+          <a href="#city/sanjose">
+            <ul>
+              <li>
+                <div class="time"></div>
+                <div class="city-name">San Jose</div>
+              </li>
+              <li class = "currentTemperature temp-Tag"></li>
+            </ul>
+          </a>
+        </li>
+        <li class="is-sydney">
+            <a href="#city/sydney">
+              <ul>
+                <li>
+                  <div class="time"></div>
+                  <div class="city-name">Sydney</div>
+                </li>
+              <li class = "currentTemperature temp-Tag"></li>
+            </ul>
+          </a>
+        </li>
+
+      <li class="is-haikou">
+          <a href="#city/haikou">
+            <ul>
+              <li>
+                <div class="time">12:30 AM</div>
+                <div class="city-name">Hai Kou</div>
+              </li>
+              <li class = "currentTemperature temp-Tag">65</li>
+            </ul>
+          </a>
+        </li>
+
+        <li class="is-shanghai">
+          <a href="#city/shanghai">
+            <ul>
+              <li>
+                <div class="time">7:00 AM</div>
+                <div class="city-name">Shang Hai</div>
+              </li>
+              <li class = "currentTemperature temp-Tag">33</li>
+            </ul>
+          </a>
+        </li>
+        <li class="is-beijing">
+          <a href="#city/beijing">
+            <ul>
+              <li>
+                <div class="time">4:30 PM</div>
+                <div class="city-name">Bei Jing</div>
+              </li>
+              <li class = "currentTemperature temp-Tag">50</li>
+            </ul>
+          </a>
+        </li>
+        <li class="is-guangzhou">
+          <a href="#city/guangzhou">
+            <ul>
+              <li>
+                <div class="time">3:20 AM</div>
+                <div class="city-name">Guang Zhou</div>
+              </li>
+              <li class = "currentTemperature temp-Tag">30</li>
+            </ul>
+          </a>
+        </li>
+      </ul>
+      <nav class="is-sanjose"> 
+        <div class = "celsius-button disabled">
+          <span>℃/</span>
+        </div>
+        <div class = "fahrenheit-button ">
+          <span>℉</span>
+        </div>
+      </nav>
+    </div>
+
+
+
+
+    <div id = "currentlocation" class = "is-currentlocation page">
+     <div class="city-detail">
+       <section class="city-header">
+        <h2>Current Location</h2>
+        <h4></h4>
+        <h1 class = "temp-Tag"></h1>
+       </section>
+       <section class="today">
+        <ul class="today-overview">
+        <li>Today</li>
+        <li></li>
+        <li class = "temp-Tag">62˚</li>
+        <li class = "temp-Tag">46˚</li>
+        </ul>
+        <div class="today-hourly-list-container">
+        <ul class="today-hourly-list" style="width: 1536px;">
+          <li>
+            <ul>
+              <li>Now</li>
+              <li><img src=""/></li>
+              <li class = "temp-Tag"></li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li></li>
+              <li><img src=""/></li>
+              <li class = "temp-Tag"></li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li></li>
+              <li><img src=""/></li>
+              <li class = "temp-Tag"></li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li></li>
+              <li><img src=""/></li>
+              <li class = "temp-Tag"></li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li></li>
+              <li><img src=""/></li>
+              <li class = "temp-Tag"></li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li></li>
+              <li><img src=""/></li>
+              <li class = "temp-Tag"></li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li></li>
+              <li><img src=""/></li>
+              <li class = "temp-Tag"></li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li></li>
+              <li><img src=""/></li>
+              <li class = "temp-Tag"></li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li></li>
+              <li><img src=""/></li>
+              <li class = "temp-Tag"></li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li></li>
+              <li><img src=""/></li>
+              <li class = "temp-Tag"></li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li></li>
+              <li><img src=""/></li>
+              <li class = "temp-Tag"></li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li></li>
+              <li><img src=""/></li>
+              <li class = "temp-Tag"></li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li></li>
+              <li><img src=""/></li>
+              <li class = "temp-Tag"></li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li></li>
+              <li><img src=""/></li>
+              <li class = "temp-Tag"></li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li></li>
+              <li><img src=""/></li>
+              <li class = "temp-Tag"></li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li></li>
+              <li><img src=""/></li>
+              <li class = "temp-Tag"></li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li></li>
+              <li><img src=""/></li>
+              <li class = "temp-Tag"></li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li></li>
+              <li><img src=""/></li>
+              <li class = "temp-Tag">50˚</li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li></li>
+              <li><img src=""/></li>
+              <li class = "temp-Tag"></li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li></li>
+              <li><img src=""/></li>
+              <li class = "temp-Tag"></li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li></li>
+              <li><img src=""/></li>
+              <li class = "temp-Tag"></li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li></li>
+              <li><img src=""/></li>
+              <li class = "temp-Tag"></li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li></li>
+              <li><img src=""/></li>
+              <li class = "temp-Tag"></li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li></li>
+              <li><img src=""/></li>
+              <li class = "temp-Tag"></li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+       </section>
+       <section class="forecast">
+        <ul class="forecast-list">
+        <li>
+          <ul>
+            <li>Wednesday</li>
+            <li><img src=""/></li>
+            <li class = "temp-Tag">63˚</li>
+            <li class = "temp-Tag">63˚</li>
+          </ul>
+        </li>
+        <li>
+          <ul>
+            <li></li>
+            <li><img src=""/></li>
+            <li class = "temp-Tag"></li>
+            <li class = "temp-Tag"></li>
+          </ul>
+        </li>
+        <li>
+          <ul>
+            <li></li>
+            <li><img src=""/></li>
+            <li class = "temp-Tag"></li>
+            <li class = "temp-Tag"></li>
+          </ul>
+        </li>
+        <li>
+          <ul>
+            <li></li>
+            <li><img src=""/></li>
+            <li class = "temp-Tag"></li>
+            <li class = "temp-Tag"></li>
+          </ul>
+        </li>
+        <li>
+          <ul>
+            <li></li>
+            <li><img src=""/></li>
+            <li class = "temp-Tag"></li>
+            <li class = "temp-Tag"></li>
+          </ul>
+        </li>
+        <li>
+          <ul>
+            <li></li>
+            <li><img src=""/></li>
+            <li class = "temp-Tag"></li>
+            <li class = "temp-Tag"></li>
+          </ul>
+        </li>
+        <li>
+          <ul>
+            <li></li>
+            <li><img src=""/></li>
+            <li class = "temp-Tag"></li>
+            <li class = "temp-Tag"></li>
+          </ul>
+        </li>
+        <li>
+          <ul>
+            <li></li>
+            <li><img src=""/></li>
+            <li class = "temp-Tag"></li>
+            <li class = "temp-Tag"></li>
+          </ul>
+        </li>
+        </ul>
+       </section>
+       <section class="today-details">
+        <p class="today-summary"></p>
+          <ul class="today-details-list">
+            <li>
+            <ul>
+            <li>Sunrise:</li>
+            <li class="sunriseTime"></li>
+            </ul>
+            </li>
+          <li>
+          <ul>
+            <li>Sunset:</li>
+            <li class="sunsetTime"></li>
+          </ul>
+        </li>
+        <li>
+        </li>
+        <li>
+          <ul>
+            <li>Chance of Rain:</li>
+            <li class= "rainRate"></li>
+          </ul>
+        </li>
+        <li>
+          <ul>
+            <li>Humidity:</li>
+            <li class= "humidity"></li>
+          </ul>
+        </li>
+        <li>
+        </li>
+        <li>
+          <ul>
+            <li>Wind:</li>
+            <li class= "wind"></li>
+          </ul>
+        </li>
+        <li>
+          <ul>
+            <li>Feels like:</li>
+            <li class="feelsLike temp-Tag"></li>
+          </ul>
+        </li>
+        <li>
+        </li>
+        <li>
+          <ul>
+            <li>Precipitation:</li>
+            <li class="precipitation"></li>
+          </ul>
+        </li>
+        <li>
+          <ul>
+            <li>Pressure:</li>
+            <li class = "pressure"></li>
+          </ul>
+        </li>
+        <li>
+        </li>
+        <li>
+          <ul>
+            <li>Visibility:</li>
+            <li class = "visibility"></li>
+          </ul>
+        </li>
+        </ul>    
+       </section>
+     </div>
+      <nav class="is-currentlocation"> 
+       <div class = "celsius-button disabled">
+         <span>℃/</span>
+       </div>
+       <div class = "fahrenheit-button">
+          <span>℉</span>
+       </div>
+       <div class="next-prev-nav">
+          <div class="prev-button disabled">
+           <a href="#city/currentlocation">◀</a>
+          </div>
+          <div class="indicator-dots">
+            <span class="current" >•</span><span class="dot">•</span><span class="dot" >•</span>
+          </div>
+          <div class="next-button">
+           <a href="#city/sanjose">▶</a>
+          </div>
+        </div>
+        <div class="list-button">
+          <a href="">☰</a>
+        </div>
+      </nav>
+    </div>
+    
+    
+
+
+    <div id = "sanjose" class="is-sanjose page">
+      <div class="city-detail">
+        <section class="city-header">
+          <h2>San Jose</h2>
+          <h4>Mostly Cloudy</h4>
+          <h1 class = "temp-Tag">49˚</h1>
+        </section>
+        <section class="today">
+          <ul class="today-overview">
+            <li>Today</li>
+            <li></li>
+            <li class = "temp-Tag"></li>
+            <li class = "temp-Tag"></li>
+          </ul>
+          <div class="today-hourly-list-container">
+            <ul class="today-hourly-list" style="width: 1536px;">
+              <li>
+                <ul>
+                  <li>Now</li>
+                  <li><img src=""/></li>
+                  <li class = "temp-Tag">47˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>9 AM</li>
+                  <li><img src=""/></li>
+                  <li class = "temp-Tag">50˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>10 AM</li>
+                  <li><img src="images/partly-cloudy-day.png"/></li>
+                  <li class = "temp-Tag">53˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>11 AM</li>
+                  <li><img src="images/partly-cloudy-day.png"/></li>
+                  <li class = "temp-Tag">56˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>12 PM</li>
+                  <li><img src="images/partly-cloudy-day.png"/></li>
+                  <li class = "temp-Tag">58˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>1 PM</li>
+                  <li><img src="images/partly-cloudy-day.png"/></li>
+                  <li class = "temp-Tag">60˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>2 PM</li>
+                  <li><img src="images/cloudy.png"/></li>
+                  <li class = "temp-Tag">62˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>3 PM</li>
+                  <li><img src="images/cloudy.png"/></li>
+                  <li class = "temp-Tag">62˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>4 PM</li>
+                  <li><img src="images/partly-cloudy-day.png"/></li>
+                  <li class = "temp-Tag">62˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>5 PM</li>
+                  <li><img src="images/cloudy.png"/></li>
+                  <li class = "temp-Tag">59˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>6 PM</li>
+                  <li><img src="images/cloudy.png"/></li>
+                  <li class = "temp-Tag">56˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>7 PM</li>
+                  <li><img src="images/cloudy.png"/></li>
+                  <li class = "temp-Tag">54˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>8 PM</li>
+                  <li><img src="images/cloudy.png"/></li>
+                  <li class = "temp-Tag">53˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>9 PM</li>
+                  <li><img src="images/cloudy.png"/></li>
+                  <li class = "temp-Tag">52˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>10 PM</li>
+                  <li><img src="images/cloudy.png"/></li>
+                  <li class = "temp-Tag">51˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>11 PM</li>
+                  <li><img src="images/cloudy.png"/></li>
+                  <li class = "temp-Tag">51˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>12 AM</li>
+                  <li><img src="images/cloudy.png"/></li>
+                  <li class = "temp-Tag">50˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>1 AM</li>
+                  <li><img src="images/cloudy.png"/></li>
+                  <li class = "temp-Tag">50˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>2 AM</li>
+                  <li><img src="images/cloudy.png"/></li>
+                  <li class = "temp-Tag">50˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>3 AM</li>
+                  <li><img src="images/cloudy.png"/></li>
+                  <li class = "temp-Tag">49˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>4 AM</li>
+                  <li><img src="images/cloudy.png"/></li>
+                  <li class = "temp-Tag">48˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>5 AM</li>
+                  <li><img src="images/cloudy.png"/></li>
+                  <li class = "temp-Tag">48˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>6 AM</li>
+                  <li><img src="images/partly-cloudy-night.png"/></li>
+                  <li class = "temp-Tag">48˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>7 AM</li>
+                  <li><img src="images/partly-cloudy-night.png"/></li>
+                  <li class = "temp-Tag">48˚</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="forecast">
+          <ul class="forecast-list">
+            <li>
+              <ul>
+                <li>Saturday</li>
+                <li><img src="images/partly-cloudy-day.png"/></li>
+                <li class = "temp-Tag">62˚</li>
+                <li class = "temp-Tag">46˚</li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Sunday</li>
+                <li><img src="images/partly-cloudy-day.png"/></li>
+                <li class = "temp-Tag">58˚</li>
+                <li class = "temp-Tag">48˚</li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Monday</li>
+                <li><img src="images/fog.png"/></li>
+                <li class = "temp-Tag">58˚</li>
+                <li class = "temp-Tag">45˚</li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Tuesday</li>
+                <li><img src="images/partly-cloudy-night.png"/></li>
+                <li class = "temp-Tag">58˚</li>
+                <li class = "temp-Tag">43˚</li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Wednesday</li>
+                <li><img src="images/partly-cloudy-day.png"/></li>
+                <li class = "temp-Tag">63˚</li>
+                <li class = "temp-Tag">36˚</li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Thursday</li>
+                <li>
+                  <img src="images/clear-day.png"/></li>
+                <li class = "temp-Tag">64˚</li>
+                <li class = "temp-Tag">36˚</li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Friday</li>
+                <li><img src="images/partly-cloudy-night.png"/></li>
+                <li class = "temp-Tag">63˚</li>
+                <li class = "temp-Tag">38˚</li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Saturday</li>
+                <li><img src="images/rain.png"/></li>
+                <li class = "temp-Tag">55˚</li>
+                <li class = "temp-Tag">43˚</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section class="today-details">
+          <p class="today-summary">Today: Light rain on Saturday, with temperatures peaking at
+          64˚F on Thursday.</p>
+          <ul class="today-details-list">
+            <li>
+              <ul>
+                <li>Sunrise:</li>
+                <li class ="sunriseTime"></li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Sunset:</li>
+                <li class = "sunsetTime"></li>
+              </ul>
+            </li>
+            <li>
+            </li>
+            <li>
+              <ul>
+                <li>Chance of Rain:</li>
+                <li class = "rainRate"></li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Humidity:</li>
+                <li class="humidity"></li>
+              </ul>
+            </li>
+            <li>
+            </li>
+            <li>
+              <ul>
+                <li>Wind:</li>
+                <li class ="wind"></li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Feels like:</li>
+                <li class = "feelsLike temp-Tag"></li>
+              </ul>
+            </li>
+            <li>
+            </li>
+            <li>
+              <ul>
+                <li>Precipitation:</li>
+                <li class = "precipitation"></li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Pressure:</li>
+                <li class = "pressure"></li>
+              </ul>
+            </li>
+            <li>
+            </li>
+            <li>
+              <ul>
+                <li>Visibility:</li>
+                <li class = "visibility"></li>
+              </ul>
+            </li>
+          </ul>
+         </section>
+      </div>
+      <nav class="is-sanjose"> 
+
+        <div class = "celsius-button  disabled">
+          <span>℃/</span>
+        </div>
+
+        <div class = "fahrenheit-button">
+          <span>℉</span>
+        </div>
+        <div class="next-prev-nav">
+
+          <div class="prev-button">
+            <a href="#city/currentlocation">◀</a>
+          </div>
+
+          <div class="indicator-dots">
+            <span class="dot">•</span><span class="current">•</span><span class="dot">•</span>
+          </div>
+
+          <div class="next-button">
+            <a href="#city/sydney">▶</a>
+          </div>
+
+        </div>
+
+        <div class="list-button">
+          <a href="">☰</a>
+        </div>
+      </nav>
+    </div>     
+
+
+
+    <div id="sydney" class="is-sydney page">
+      <div class="city-detail">
+        <section class="city-header">
+          <h2>Sydney</h2>
+          <h4>Light Rain</h4>
+          <h1 class = "temp-Tag">70˚</h1>
+        </section>
+        <section class="today">
+          <ul class="today-overview">
+            <li>Today</li>
+            <li></li>
+            <li class = "temp-Tag">76˚</li>
+            <li class = "temp-Tag">69˚</li>
+          </ul>
+          <div class="today-hourly-list-container">
+            <ul class="today-hourly-list" style="width: 1536px;">
+              <li>
+                <ul>
+                  <li>Now</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">69˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>4 AM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">71˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>5 AM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">72˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>6 AM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">72˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>7 AM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">72˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>8 AM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">71˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>9 AM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">71˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>10 AM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">70˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>11 AM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">69˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>12 PM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">69˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>1 PM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">69˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>2 PM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">69˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>3 PM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">69˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>4 PM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">69˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>5 PM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">69˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>6 PM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">70˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>7 PM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">70˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>8 PM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">70˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>9 PM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">70˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>10 PM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">71˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>11 PM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">71˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>12 AM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">72˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>1 AM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">72˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>2 AM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">72˚</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="forecast">
+          <ul class="forecast-list">
+            <li>
+              <ul>
+                <li>Sunday</li>
+                <li><img src="images/rain.png" /></li>
+                <li class = "temp-Tag">76˚</li>
+                <li class = "temp-Tag">69˚</li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Monday</li>
+                <li><img src="images/rain.png" /></li>
+                <li class = "temp-Tag">72˚</li>
+                <li class = "temp-Tag">70˚</li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Tuesday</li>
+                <li><img src="images/partly-cloudy-day.png" /></li>
+                <li class = "temp-Tag">80˚</li>
+                <li class = "temp-Tag">72˚</li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Wednesday</li>
+                <li><img src="images/rain.png" /></li>
+                <li class = "temp-Tag">89˚</li>
+                <li class = "temp-Tag">73˚</li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Thursday</li>
+                <li><img src="images/partly-cloudy-day.png" /></li>
+                <li class = "temp-Tag">73˚</li>
+                <li class = "temp-Tag">68˚</li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Friday</li>
+                <li><img src="images/rain.png" /></li>
+                <li class = "temp-Tag">79˚</li>
+                <li class = "temp-Tag">65˚</li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Saturday</li>
+                <li><img src="images/partly-cloudy-day.png" /></li>
+                <li class = "temp-Tag">75˚</li>
+                <li class = "temp-Tag">66˚</li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Sunday</li>
+                <li><img src="images/partly-cloudy-day.png" /></li>
+                <li class = "temp-Tag">75˚</li>
+                <li class = "temp-Tag">65˚</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section class="today-details">
+          <p class="today-summary">Today: Light rain today through Saturday, with temperatures rising to 89°F on Wednesday.</p>
+          <ul class="today-details-list">
+            <li>
+              <ul>
+                <li>Sunrise:</li>
+                <li class = "sunriseTime"></li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Sunset:</li>
+                <li class = "sunsetTime"></li>
+              </ul>
+            </li>
+            <li>
+            </li>
+            <li>
+              <ul>
+                <li>Chance of Rain:</li>
+                <li class = "rainRate"></li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Humidity:</li>
+                <li class = "humidity"></li>
+              </ul>
+            </li>
+            <li>
+            </li>
+            <li>
+              <ul>
+                <li>Wind:</li>
+                <li class = "wind"></li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Feels like:</li>
+                <li class = "feelsLike temp-Tag"></li>
+              </ul>
+            </li>
+            <li>
+            </li>
+            <li>
+              <ul>
+                <li>Precipitation:</li>
+                <li class = "precipitation">0</li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Pressure:</li>
+                <li class = "pressure"></li>
+              </ul>
+            </li>
+            <li>
+            </li>
+            <li>
+              <ul>
+                <li>Visibility:</li>
+                <li class = "visibility"></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <nav class="is-sydney"> 
+        <div class = "celsius-button disabled">
+          <span>℃/</span>
+        </div>
+
+        <div class = "fahrenheit-button">
+          <span>℉</span>
+        </div>
+        <div class="next-prev-nav">
+          <div class="prev-button ">
+            <a href="#city/sanjose">◀</a>
+          </div>
+          <div class="indicator-dots">
+            <span class="dot">•</span><span class="dot">•</span><span class="current">•</span>
+          </div>
+          <div class="next-button disabled">
+            <a href="#city/sydney">▶</a>
+          </div>
+        </div>
+        <div class="list-button">
+          <a href="">☰</a>
+        </div>
+      </nav>
+    </div>
+
+    <div id="haikou" class="is-haikou page">
+      <div class="city-detail">
+        <section class="city-header">
+          <h2>Sydney</h2>
+          <h4>Light Rain</h4>
+          <h1 class = "temp-Tag">70˚</h1>
+        </section>
+        <section class="today">
+          <ul class="today-overview">
+            <li>Today</li>
+            <li></li>
+            <li class = "temp-Tag">76˚</li>
+            <li class = "temp-Tag">69˚</li>
+          </ul>
+          <div class="today-hourly-list-container">
+            <ul class="today-hourly-list" style="width: 1536px;">
+              <li>
+                <ul>
+                  <li>Now</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">69˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>4 AM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">71˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>5 AM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">72˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>6 AM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">72˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>7 AM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">72˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>8 AM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">71˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>9 AM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">71˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>10 AM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">70˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>11 AM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">69˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>12 PM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">69˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>1 PM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">69˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>2 PM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">69˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>3 PM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">69˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>4 PM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">69˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>5 PM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">69˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>6 PM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">70˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>7 PM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">70˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>8 PM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">70˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>9 PM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">70˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>10 PM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">71˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>11 PM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">71˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>12 AM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">72˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>1 AM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">72˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>2 AM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">72˚</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="forecast">
+          <ul class="forecast-list">
+            <li>
+              <ul>
+                <li>Sunday</li>
+                <li><img src="images/rain.png" /></li>
+                <li class = "temp-Tag">76˚</li>
+                <li class = "temp-Tag">69˚</li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Monday</li>
+                <li><img src="images/rain.png" /></li>
+                <li class = "temp-Tag">72˚</li>
+                <li class = "temp-Tag">70˚</li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Tuesday</li>
+                <li><img src="images/partly-cloudy-day.png" /></li>
+                <li class = "temp-Tag">80˚</li>
+                <li class = "temp-Tag">72˚</li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Wednesday</li>
+                <li><img src="images/rain.png" /></li>
+                <li class = "temp-Tag">89˚</li>
+                <li class = "temp-Tag">73˚</li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Thursday</li>
+                <li><img src="images/partly-cloudy-day.png" /></li>
+                <li class = "temp-Tag">73˚</li>
+                <li class = "temp-Tag">68˚</li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Friday</li>
+                <li><img src="images/rain.png" /></li>
+                <li class = "temp-Tag">79˚</li>
+                <li class = "temp-Tag">65˚</li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Saturday</li>
+                <li><img src="images/partly-cloudy-day.png" /></li>
+                <li class = "temp-Tag">75˚</li>
+                <li class = "temp-Tag">66˚</li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Sunday</li>
+                <li><img src="images/partly-cloudy-day.png" /></li>
+                <li class = "temp-Tag">75˚</li>
+                <li class = "temp-Tag">65˚</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section class="today-details">
+          <p class="today-summary">Today: Light rain today through Saturday, with temperatures rising to 89°F on Wednesday.</p>
+          <ul class="today-details-list">
+            <li>
+              <ul>
+                <li>Sunrise:</li>
+                <li class = "sunriseTime"></li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Sunset:</li>
+                <li class = "sunsetTime"></li>
+              </ul>
+            </li>
+            <li>
+            </li>
+            <li>
+              <ul>
+                <li>Chance of Rain:</li>
+                <li class = "rainRate"></li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Humidity:</li>
+                <li class = "humidity"></li>
+              </ul>
+            </li>
+            <li>
+            </li>
+            <li>
+              <ul>
+                <li>Wind:</li>
+                <li class = "wind"></li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Feels like:</li>
+                <li class = "feelsLike temp-Tag"></li>
+              </ul>
+            </li>
+            <li>
+            </li>
+            <li>
+              <ul>
+                <li>Precipitation:</li>
+                <li class = "precipitation">0</li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Pressure:</li>
+                <li class = "pressure"></li>
+              </ul>
+            </li>
+            <li>
+            </li>
+            <li>
+              <ul>
+                <li>Visibility:</li>
+                <li class = "visibility"></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <nav class="is-haikou"> 
+        <div class = "celsius-button disabled">
+          <span>℃/</span>
+        </div>
+
+        <div class = "fahrenheit-button">
+          <span>℉</span>
+        </div>
+        <div class="next-prev-nav">
+          <div class="prev-button ">
+            <a href="#city/sydney">◀</a>
+          </div>
+          <div class="indicator-dots">
+            <span class="dot">•</span><span class="dot">•</span><span class="current">•</span>
+          </div>
+          <div class="next-button disabled">
+            <a href="#city/shanghai">▶</a>
+          </div>
+        </div>
+        <div class="list-button">
+          <a href="">☰</a>
+        </div>
+      </nav>
+    </div>
+
+
+    <div id="shanghai" class="is-shanghai page">
+      <div class="city-detail">
+        <section class="city-header">
+          <h2>Sydney</h2>
+          <h4>Light Rain</h4>
+          <h1 class = "temp-Tag">70˚</h1>
+        </section>
+        <section class="today">
+          <ul class="today-overview">
+            <li>Today</li>
+            <li></li>
+            <li class = "temp-Tag">76˚</li>
+            <li class = "temp-Tag">69˚</li>
+          </ul>
+          <div class="today-hourly-list-container">
+            <ul class="today-hourly-list" style="width: 1536px;">
+              <li>
+                <ul>
+                  <li>Now</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">69˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>4 AM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">71˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>5 AM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">72˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>6 AM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">72˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>7 AM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">72˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>8 AM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">71˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>9 AM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">71˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>10 AM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">70˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>11 AM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">69˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>12 PM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">69˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>1 PM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">69˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>2 PM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">69˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>3 PM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">69˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>4 PM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">69˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>5 PM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">69˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>6 PM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">70˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>7 PM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">70˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>8 PM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">70˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>9 PM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">70˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>10 PM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">71˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>11 PM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">71˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>12 AM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">72˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>1 AM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">72˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>2 AM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">72˚</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="forecast">
+          <ul class="forecast-list">
+            <li>
+              <ul>
+                <li>Sunday</li>
+                <li><img src="images/rain.png" /></li>
+                <li class = "temp-Tag">76˚</li>
+                <li class = "temp-Tag">69˚</li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Monday</li>
+                <li><img src="images/rain.png" /></li>
+                <li class = "temp-Tag">72˚</li>
+                <li class = "temp-Tag">70˚</li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Tuesday</li>
+                <li><img src="images/partly-cloudy-day.png" /></li>
+                <li class = "temp-Tag">80˚</li>
+                <li class = "temp-Tag">72˚</li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Wednesday</li>
+                <li><img src="images/rain.png" /></li>
+                <li class = "temp-Tag">89˚</li>
+                <li class = "temp-Tag">73˚</li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Thursday</li>
+                <li><img src="images/partly-cloudy-day.png" /></li>
+                <li class = "temp-Tag">73˚</li>
+                <li class = "temp-Tag">68˚</li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Friday</li>
+                <li><img src="images/rain.png" /></li>
+                <li class = "temp-Tag">79˚</li>
+                <li class = "temp-Tag">65˚</li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Saturday</li>
+                <li><img src="images/partly-cloudy-day.png" /></li>
+                <li class = "temp-Tag">75˚</li>
+                <li class = "temp-Tag">66˚</li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Sunday</li>
+                <li><img src="images/partly-cloudy-day.png" /></li>
+                <li class = "temp-Tag">75˚</li>
+                <li class = "temp-Tag">65˚</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section class="today-details">
+          <p class="today-summary">Today: Light rain today through Saturday, with temperatures rising to 89°F on Wednesday.</p>
+          <ul class="today-details-list">
+            <li>
+              <ul>
+                <li>Sunrise:</li>
+                <li class = "sunriseTime"></li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Sunset:</li>
+                <li class = "sunsetTime"></li>
+              </ul>
+            </li>
+            <li>
+            </li>
+            <li>
+              <ul>
+                <li>Chance of Rain:</li>
+                <li class = "rainRate"></li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Humidity:</li>
+                <li class = "humidity"></li>
+              </ul>
+            </li>
+            <li>
+            </li>
+            <li>
+              <ul>
+                <li>Wind:</li>
+                <li class = "wind"></li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Feels like:</li>
+                <li class = "feelsLike temp-Tag"></li>
+              </ul>
+            </li>
+            <li>
+            </li>
+            <li>
+              <ul>
+                <li>Precipitation:</li>
+                <li class = "precipitation">0</li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Pressure:</li>
+                <li class = "pressure"></li>
+              </ul>
+            </li>
+            <li>
+            </li>
+            <li>
+              <ul>
+                <li>Visibility:</li>
+                <li class = "visibility"></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <nav class="is-shanghai"> 
+        <div class = "celsius-button disabled">
+          <span>℃/</span>
+        </div>
+
+        <div class = "fahrenheit-button">
+          <span>℉</span>
+        </div>
+        <div class="next-prev-nav">
+          <div class="prev-button ">
+            <a href="#city/haikou">◀</a>
+          </div>
+          <div class="indicator-dots">
+            <span class="dot">•</span><span class="dot">•</span><span class="current">•</span>
+          </div>
+          <div class="next-button disabled">
+            <a href="#city/beijing">▶</a>
+          </div>
+        </div>
+        <div class="list-button">
+          <a href="">☰</a>
+        </div>
+      </nav>
+    </div>
+
+    <div id="beijing" class="is-beijing page">
+      <div class="city-detail">
+        <section class="city-header">
+          <h2>Sydney</h2>
+          <h4>Light Rain</h4>
+          <h1 class = "temp-Tag">70˚</h1>
+        </section>
+        <section class="today">
+          <ul class="today-overview">
+            <li>Today</li>
+            <li></li>
+            <li class = "temp-Tag">76˚</li>
+            <li class = "temp-Tag">69˚</li>
+          </ul>
+          <div class="today-hourly-list-container">
+            <ul class="today-hourly-list" style="width: 1536px;">
+              <li>
+                <ul>
+                  <li>Now</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">69˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>4 AM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">71˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>5 AM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">72˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>6 AM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">72˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>7 AM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">72˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>8 AM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">71˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>9 AM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">71˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>10 AM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">70˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>11 AM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">69˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>12 PM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">69˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>1 PM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">69˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>2 PM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">69˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>3 PM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">69˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>4 PM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">69˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>5 PM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">69˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>6 PM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">70˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>7 PM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">70˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>8 PM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">70˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>9 PM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">70˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>10 PM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">71˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>11 PM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">71˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>12 AM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">72˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>1 AM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">72˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>2 AM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">72˚</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="forecast">
+          <ul class="forecast-list">
+            <li>
+              <ul>
+                <li>Sunday</li>
+                <li><img src="images/rain.png" /></li>
+                <li class = "temp-Tag">76˚</li>
+                <li class = "temp-Tag">69˚</li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Monday</li>
+                <li><img src="images/rain.png" /></li>
+                <li class = "temp-Tag">72˚</li>
+                <li class = "temp-Tag">70˚</li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Tuesday</li>
+                <li><img src="images/partly-cloudy-day.png" /></li>
+                <li class = "temp-Tag">80˚</li>
+                <li class = "temp-Tag">72˚</li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Wednesday</li>
+                <li><img src="images/rain.png" /></li>
+                <li class = "temp-Tag">89˚</li>
+                <li class = "temp-Tag">73˚</li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Thursday</li>
+                <li><img src="images/partly-cloudy-day.png" /></li>
+                <li class = "temp-Tag">73˚</li>
+                <li class = "temp-Tag">68˚</li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Friday</li>
+                <li><img src="images/rain.png" /></li>
+                <li class = "temp-Tag">79˚</li>
+                <li class = "temp-Tag">65˚</li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Saturday</li>
+                <li><img src="images/partly-cloudy-day.png" /></li>
+                <li class = "temp-Tag">75˚</li>
+                <li class = "temp-Tag">66˚</li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Sunday</li>
+                <li><img src="images/partly-cloudy-day.png" /></li>
+                <li class = "temp-Tag">75˚</li>
+                <li class = "temp-Tag">65˚</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section class="today-details">
+          <p class="today-summary">Today: Light rain today through Saturday, with temperatures rising to 89°F on Wednesday.</p>
+          <ul class="today-details-list">
+            <li>
+              <ul>
+                <li>Sunrise:</li>
+                <li class = "sunriseTime"></li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Sunset:</li>
+                <li class = "sunsetTime"></li>
+              </ul>
+            </li>
+            <li>
+            </li>
+            <li>
+              <ul>
+                <li>Chance of Rain:</li>
+                <li class = "rainRate"></li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Humidity:</li>
+                <li class = "humidity"></li>
+              </ul>
+            </li>
+            <li>
+            </li>
+            <li>
+              <ul>
+                <li>Wind:</li>
+                <li class = "wind"></li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Feels like:</li>
+                <li class = "feelsLike temp-Tag"></li>
+              </ul>
+            </li>
+            <li>
+            </li>
+            <li>
+              <ul>
+                <li>Precipitation:</li>
+                <li class = "precipitation">0</li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Pressure:</li>
+                <li class = "pressure"></li>
+              </ul>
+            </li>
+            <li>
+            </li>
+            <li>
+              <ul>
+                <li>Visibility:</li>
+                <li class = "visibility"></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <nav class="is-beijing"> 
+        <div class = "celsius-button disabled">
+          <span>℃/</span>
+        </div>
+
+        <div class = "fahrenheit-button">
+          <span>℉</span>
+        </div>
+        <div class="next-prev-nav">
+          <div class="prev-button ">
+            <a href="#city/shanghai">◀</a>
+          </div>
+          <div class="indicator-dots">
+            <span class="dot">•</span><span class="dot">•</span><span class="current">•</span>
+          </div>
+          <div class="next-button disabled">
+            <a href="#city/guangzhou">▶</a>
+          </div>
+        </div>
+        <div class="list-button">
+          <a href="">☰</a>
+        </div>
+      </nav>
+    </div>
+
+    <div id="guangzhou" class="is-guangzhou page">
+      <div class="city-detail">
+        <section class="city-header">
+          <h2>Sydney</h2>
+          <h4>Light Rain</h4>
+          <h1 class = "temp-Tag">70˚</h1>
+        </section>
+        <section class="today">
+          <ul class="today-overview">
+            <li>Today</li>
+            <li></li>
+            <li class = "temp-Tag">76˚</li>
+            <li class = "temp-Tag">69˚</li>
+          </ul>
+          <div class="today-hourly-list-container">
+            <ul class="today-hourly-list" style="width: 1536px;">
+              <li>
+                <ul>
+                  <li>Now</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">69˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>4 AM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">71˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>5 AM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">72˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>6 AM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">72˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>7 AM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">72˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>8 AM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">71˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>9 AM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">71˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>10 AM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">70˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>11 AM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">69˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>12 PM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">69˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>1 PM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">69˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>2 PM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">69˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>3 PM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">69˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>4 PM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">69˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>5 PM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">69˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>6 PM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">70˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>7 PM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">70˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>8 PM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">70˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>9 PM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">70˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>10 PM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">71˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>11 PM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">71˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>12 AM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">72˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>1 AM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">72˚</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>2 AM</li>
+                  <li><img src="images/rain.png" /></li>
+                  <li class = "temp-Tag">72˚</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="forecast">
+          <ul class="forecast-list">
+            <li>
+              <ul>
+                <li>Sunday</li>
+                <li><img src="images/rain.png" /></li>
+                <li class = "temp-Tag">76˚</li>
+                <li class = "temp-Tag">69˚</li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Monday</li>
+                <li><img src="images/rain.png" /></li>
+                <li class = "temp-Tag">72˚</li>
+                <li class = "temp-Tag">70˚</li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Tuesday</li>
+                <li><img src="images/partly-cloudy-day.png" /></li>
+                <li class = "temp-Tag">80˚</li>
+                <li class = "temp-Tag">72˚</li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Wednesday</li>
+                <li><img src="images/rain.png" /></li>
+                <li class = "temp-Tag">89˚</li>
+                <li class = "temp-Tag">73˚</li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Thursday</li>
+                <li><img src="images/partly-cloudy-day.png" /></li>
+                <li class = "temp-Tag">73˚</li>
+                <li class = "temp-Tag">68˚</li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Friday</li>
+                <li><img src="images/rain.png" /></li>
+                <li class = "temp-Tag">79˚</li>
+                <li class = "temp-Tag">65˚</li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Saturday</li>
+                <li><img src="images/partly-cloudy-day.png" /></li>
+                <li class = "temp-Tag">75˚</li>
+                <li class = "temp-Tag">66˚</li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Sunday</li>
+                <li><img src="images/partly-cloudy-day.png" /></li>
+                <li class = "temp-Tag">75˚</li>
+                <li class = "temp-Tag">65˚</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section class="today-details">
+          <p class="today-summary">Today: Light rain today through Saturday, with temperatures rising to 89°F on Wednesday.</p>
+          <ul class="today-details-list">
+            <li>
+              <ul>
+                <li>Sunrise:</li>
+                <li class = "sunriseTime"></li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Sunset:</li>
+                <li class = "sunsetTime"></li>
+              </ul>
+            </li>
+            <li>
+            </li>
+            <li>
+              <ul>
+                <li>Chance of Rain:</li>
+                <li class = "rainRate"></li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Humidity:</li>
+                <li class = "humidity"></li>
+              </ul>
+            </li>
+            <li>
+            </li>
+            <li>
+              <ul>
+                <li>Wind:</li>
+                <li class = "wind"></li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Feels like:</li>
+                <li class = "feelsLike temp-Tag"></li>
+              </ul>
+            </li>
+            <li>
+            </li>
+            <li>
+              <ul>
+                <li>Precipitation:</li>
+                <li class = "precipitation">0</li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Pressure:</li>
+                <li class = "pressure"></li>
+              </ul>
+            </li>
+            <li>
+            </li>
+            <li>
+              <ul>
+                <li>Visibility:</li>
+                <li class = "visibility"></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <nav class="is-guangzhou"> 
+        <div class = "celsius-button disabled">
+          <span>℃/</span>
+        </div>
+
+        <div class = "fahrenheit-button">
+          <span>℉</span>
+        </div>
+        <div class="next-prev-nav">
+          <div class="prev-button ">
+            <a href="#city/beijing">◀</a>
+          </div>
+          <div class="indicator-dots">
+            <span class="dot">•</span><span class="dot">•</span><span class="current">•</span>
+          </div>
+          <div class="next-button disabled">
+            <a href="#city/guangzhou">▶</a>
+          </div>
+        </div>
+        <div class="list-button">
+          <a href="">☰</a>
+        </div>
+      </nav>
+    </div>
+
+
+  
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="weather.js"></script>
+    <script>
+      $(window).ready(function() {
+        $("#citieslist").show();
+        Rounting.init();
+      })
+    </script>
+  </body>
+</html>
